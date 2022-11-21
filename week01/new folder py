@@ -1,55 +1,43 @@
 from asyncio import events
+from ctypes.wintypes import SMALL_RECT
 import numbers
 from parser import tuple2st
+import secrets
 from unicodedata import name
 
 
-print("Hello World!")
-#list[ ]
-fruits=['apple', 'banana', 'cherry', 'orange']  #0123
-print(fruits[1])
-fruits[2]='pineapple'
-print(fruits)
-#sorting 
-numbers=[1,2,4,6,252,44,56]
-numbers.sort(reverse=True)
-print(numbers)
-A=fruits+numbers
-print(A)
-#Tuples( ) #cannot modify values
-fruits=('apple', 'banana', 'cherry', 'orange') 
-print(fruits[2])
-numbers=(59,280,2,859,738,46,829,94,85)
-print(numbers)
-AB=fruits+numbers
-print(AB)
-#set{ } random numbers
-fruits={'apple', 'banana', 'cherry', 'orange'}
-print(fruits)
-numbers={68,82,6,732,8,38,19,0}
-print(numbers)
-#dictionary #can store data .get()
-my_data={
-    "name":"lavanya",
-    "age":"20",
-    "degree":"B.A.English"
-}
-print(my_data.get("degree"))
-#if,else 
-num=0
-num=6
-if num > 5:
-    print("Positive number")
-elif num == 7:
-    print("Zero")
-else:
-    print("Negative number")
-name=("evangeline")
-age=int("18")
-if age>=18:
-    print("eligible to vote")
-fruits=('apple', 'banana', 'cherry', 'orange') 
-print(fruits[2])    
+Number1=10
+Number2=5
+while(Number1!=Number2):
+    print('Number1 is not equal to Number2')
+    Number2=int(input("Enter a number:"))
+from datetime import datetime
+
+# datetime object containing current date and time
+now = datetime.now()
+ 
+print("now =", now)
+
+# dd/mm/YY H:M:S
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+print("date and time =", dt_string)
+
+Value=input("input some comma separated numbers")
+ist=Value.split(",")
+tuple=tuple(ist)
+print('ist:',ist)
+print('tuple:',tuple)
+print(1,2,3)
+name=input("Enter your name")
+print("Hello " +  name +" !")   
+
+
+
+
+
+
+
+
 
 
 
